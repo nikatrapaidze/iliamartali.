@@ -1,0 +1,96 @@
+body {
+    font-family: 'BPG Nino Mtavruli', serif;
+    background: linear-gradient(to bottom right, #fafafa, #eae0d5);
+    color: #4b3832;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #5a3e36;
+    color: white;
+    border-bottom: 5px solid #e8d8c3;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+    font-style: italic;
+  }
+  
+  /* ჩარჩოები სექციებისთვის */
+  section.content {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* ჩარჩო თითოეული ელემენტისთვის */
+  .frame {
+    background: #fff;
+    border: 3px solid #8c7b75;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .frame:hover {
+    transform: scale(1.05);
+  }
+  
+  /* სურათები */
+  .frame img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* სათაური და აღწერა */
+  .frame h2 {
+    font-size: 1.8rem;
+    margin-top: 15px;
+    color: #4b3832;
+  }
+  
+  .frame p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* ანიმაცია ჩასვლისას */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fade-in 2s ease-in-out;
+  }
+  
+  /* ქვედა ნაწილი */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #5a3e36;
+    color: white;
+    border-top: 5px solid #e8d8c3;
+  }

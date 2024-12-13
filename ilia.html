@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ილია ჭავჭავაძე</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ილია ჭავჭავაძე</h1>
+    <p>ქართული ლიტერატურის სულიერი ბრწყინვალება</p>
+    <nav>
+      <ul class="menu">
+        <li><a href="biografia.html">ბიოგრაფია</a></li>
+        <li><a href="nawarmoebebi.html">ილიას ნაწარმოებები</a></li>
+        <li><a href="gazeti.html">გაზეთი „ივერია“</a></li>
+        <li><a href="olga.html">ოლღა გურამიშვილი</a></li>
+        <li><a href="sxxvamwerlebi.html">ილია და სხვა მწერლები</a></li>
+        <li><a href="saqmianobailias.html">ილიას საქმიანობა</a></li> 
+      </ul>
+    </nav>
+  </header>
+
+  <div class="search-container">
+    <input type="text" id="search-bar" onkeyup="searchContent()" placeholder="ძიება...">
+  </div>
+
+  <section id="biography" class="fade-in">
+    <h2>ბიოგრაფია</h2>
+    <p>ილია ჭავჭავაძე (1837-1907) – ქართველი მწერალი, პოეტი, საზოგადო მოღვაწე და ეროვნული ლიდერი, რომელმაც მნიშვნელოვანი წვლილი შეიტანა ქართული ლიტერატურის და საზოგადოების განვითარებაში. ილია იყო ეროვნული მოძრაობის ერთ-ერთი ლიდერი და წლების განმავლობაში საქართველოს პროგრესული განვითარების სიმბოლო.</p>
+  </section>
+
+  <section id="works" class="fade-in">
+    <h2>ილიას ნაწარმოებები</h2>
+    <article class="poetry">
+      <h3>ლექსები</h3>
+      <blockquote>
+        "სხვა საქართველო სად არის?  
+        უცხოეთს რომ შეჰხარის,  
+        აქ, არემარე ბინდია  
+        და ღამე თავთ ფარია."
+      </blockquote>
+    </article>
+
+    <article class="stories">
+      <h3>მოთხრობები</h3>
+      <ul>
+        <li><strong>„გლახის ნაამბობი“</strong> – ძველ ქართული ყოფის ტკივილიანი სურათები.</li>
+        <li><strong>„ოთარაანთ ქვრივი“</strong> – გმირი ქალის ცხოვრების ტრაგედია.</li>
+        <li><strong>„კაცია-ადამიანი?!“</strong> – ცხოვრების მარადიული კითხვები.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="iveria" class="fade-in">
+    <h2>გაზეთი „ივერია“</h2>
+    <p>„ივერია“ იყო ილიას მიერ დაარსებული გაზეთი, რომელიც მნიშვნელოვან როლს ასრულებდა ეროვნულ-განმანათლებლურ საქმიანობაში. გაზეთში იბეჭდებოდა პუბლიცისტური სტატიები, ლექსები და ქართული საზოგადოების განვითარების გეგმები.</p>
+  </section>
+
+  <section id="olga" class="fade-in">
+    <h2>ოლღა გურამიშვილი</h2>
+    <p>ოლღა გურამიშვილი იყო ილიას ერთგული მეუღლე და მისი თანამოაზრე. ოლღა ილიას გვერდით დადგა ყველა რთულ მომენტში და აქტიურად მონაწილეობდა მისი საზოგადოებრივი საქმიანობის მხარდაჭერაში.</p>
+  </section>
+
+  <footer>
+    <p>შექმნილია ილიას უკვდავი მემკვიდრეობის პატივისცემით</p>
+  </footer>
+
+  <script>
+    function searchContent() {
+      const input = document.getElementById('search-bar').value.toLowerCase();
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        const text = section.innerText.toLowerCase();
+        section.style.display = text.includes(input) ? 'block' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>
